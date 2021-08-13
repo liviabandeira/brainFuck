@@ -4,6 +4,8 @@ import org.junit.Test
 import java.io.File
 
 
+const val VALID_CHARS = "+-<>[],."
+
 class InterpreterTest {
 
     @Test
@@ -30,7 +32,16 @@ class InterpreterTest {
             brainInstruction = String(f.readBytes())
         }
 
-        brainfuckInterpreter(brainInstruction)
+        brainfuckInterpreter(brainInstruction.filter {
+            when {
+                VALID_CHARS.contains(it) -> {
+                    true
+                }
+                else -> {
+                    throw ExceptionInInitializerError("Please provide a program or file name as the first parameter")
+                }
+            }
+        })
 
     }
 }

@@ -54,7 +54,7 @@ private fun jumps(brainInstruction: String): Map<Int, Int> {
     }
 
     if (!stack.isEmpty()) {
-        return jumpsMap
+        throw ExceptionInInitializerError("Program has unmatched brackets.")
     }
-    throw ExceptionInInitializerError("Program has unmatched brackets.")
+    return jumpsMap
 }

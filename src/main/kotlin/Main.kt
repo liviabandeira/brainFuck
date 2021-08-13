@@ -15,5 +15,14 @@ fun main(args: Array<String>) {
         brainInstruction = String(file.readBytes())
     }
 
-    brainfuckInterpreter(brainInstruction.filter { VALID_CHARS.contains(it) })
+    brainfuckInterpreter(brainInstruction.filter {
+        when {
+            VALID_CHARS.contains(it) -> {
+                true
+            }
+            else -> {
+                throw ExceptionInInitializerError("Please provide a program or file name as the first parameter")
+            }
+        }
+    })
 }
