@@ -1,1 +1,0 @@
-/Users/liviabandeira/IdeaProjects/brainfuck/build/classes/kotlin/main/MainKt.class:/Users/liviabandeira/IdeaProjects/brainfuck/build/classes/kotlin/main/com/livia/brainFuck/InterpreterKt.class

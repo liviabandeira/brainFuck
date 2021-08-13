@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.livia.brainFuck.MatchTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-13T11:02:41" hostname="MacBook-Air-de-Livia.local" time="0.007">
-  <properties/>
-  <testcase name="Given an non valid instruction brain fuck, should doing matchInstruction with error" classname="com.livia.brainFuck.MatchTest" time="0.007"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
